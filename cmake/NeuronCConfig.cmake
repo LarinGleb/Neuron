@@ -1,0 +1,3 @@
+add_library(NeuronC STATIC IMPORTED)
+find_library(NEURONC_LIBRARY_PATH NeuronC HINTS "${CMAKE_CURRENT_LIST_DIR}/../../")
+set_target_properties(NeuronC PROPERTIES IMPORTED_LOCATION "${MATHC_LIBRARY_PATH}")
